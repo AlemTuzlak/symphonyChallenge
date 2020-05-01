@@ -27,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "node-sass public/sass/main.scss public/css/style.css -w"
+    "sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "sass-seed": "node-sass public/sass/main.scss public/css/style.css"
   },
   "eslintConfig": {
     "extends": "react-app"
