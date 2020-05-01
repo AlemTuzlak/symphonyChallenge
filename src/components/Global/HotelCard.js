@@ -85,7 +85,7 @@ class HotelCard extends Component {
     }
     toggleReviews = () => {
         const { hotel } = this.props;
-        if(!hotel) return;
+        /* if(!hotel) return; */
         this.setState({
             reviewsShown: !this.state.reviewsShown
         }, () => {
