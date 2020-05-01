@@ -1,0 +1,32 @@
+//* Imports from abstracts  //
+@import './abstracts/functions';
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+//* Imports from base  //
+@import './base/animations';
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+
+//* Imports from components //
+
+//? Form component styling
+@import './components/forms/login-form';
+@import './components/forms/register-form';
+//? Global components styling
+@import './components/global/button';
+@import './components/global/input';
+@import './components/global/review';
+@import './components/global/stars';
+@import './components/global/textarea';
+@import './components/global/hotel-card';
+//* Imports from layout  //
+@import './layout/header';
+
+//* Imports from pages  //
+@import './pages/hotels';
+@import './pages/login';
+
+//* Imports from themes  //
+//* Imports from vendors  //

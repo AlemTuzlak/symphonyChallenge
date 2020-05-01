@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import FrontendLayout from './components/hocs/FrontendLayout';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import LoginPage from './components/LoginPage/LoginPage';
+import DashboardPage from './components/DashboardPage/DashboardPage';
+import FavoritesPage from './components/FavoritesPage/FavoritesPage';
+import HotelPage from './components/HotelPage/HotelPage';
+
+class App extends Component {
+    render(){
+      return (
+        <Router>
+              <Switch> 
+                <Route exact path="/dashboard" component={FrontendLayout(DashboardPage)} />
+                <Route exact path="/favorites" component={FrontendLayout(FavoritesPage)} />
+                <Route exact path="/hotel" component={FrontendLayout(HotelPage)} />
+                <Route exact path="/" component={FrontendLayout(LoginPage)} />
+              </Switch>
+          </Router>
+      );
+    }
 }
 
 export default App;

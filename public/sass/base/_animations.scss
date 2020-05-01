@@ -1,0 +1,213 @@
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes shake {
+    20% {
+        
+        transform: scale(1.05) rotate(5deg)
+    }
+    
+    
+    50% {
+        transform: scale(1.05) rotate(-5deg)
+    }
+   
+    100% {
+        transform: scale(1.05) rotate(0)
+    }
+}
+@keyframes fadeInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes animateLoginSwitch {
+    0% {
+        left: 50%;
+        width: 50%;
+    }
+
+    50% {
+        width: 60%;
+    }
+    100% {
+        left: 0;
+        width: 50%;
+    }
+}
+
+@keyframes animateLoginContainer {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes animateRegisterSwitch {
+    0% {
+        left: 0;
+        width: 50%;
+    }
+
+    50% {
+        width: 60%;
+    }
+    100% {
+        left: 50%;
+        width: 50%;
+    }
+}
+
+@keyframes animateRegisterContainer {
+    0% {
+        left: 50%;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes loginTopBox {
+    0% {
+        transform: translate(335%, 0);
+    }
+    50% {
+        transform: translate(198%, -30%);
+    }
+    100%{
+        transform: translate(62%, 0);
+    }
+}
+
+@keyframes registerTopBox {
+    0% {
+        transform: translate(62%, 0);
+    }
+    50% {
+        transform: translate(198%, -30%);
+    }
+    100%{
+        transform: translate(335%, 0);
+    }
+}
+
+@keyframes loginBottomBox {
+    0% {
+        transform: translate(62%, 15%);
+    }
+    50% {
+        transform: translate(198%, 35%);
+    }
+    100%{
+        transform: translate(335%, 15%);
+    }
+}
+@keyframes registerBottomBox {
+    0% {
+        transform: translate(335%, 15%);
+    }
+    50% {
+        transform: translate(198%, 35%);
+    }
+    100%{
+        transform: translate(62%, 15%);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes arrowUp {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform:  rotate(-180deg);
+    }
+}
+@keyframes arrowDown {
+    0% {
+        transform: rotate(-180deg)
+    }
+    100% {
+        transform:  rotate(0deg);
+    }
+}
+
+@keyframes rotateFull {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}

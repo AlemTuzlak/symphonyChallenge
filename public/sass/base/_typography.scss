@@ -1,0 +1,86 @@
+.yellow-text {
+    color: $yellow-main;
+}
+
+.gray-text {
+    color: $dark-gray;
+}
+
+.white-text {
+    color: $white;
+}
+.yellow-dark-text {
+    color: $yellow-dark;
+}
+.descriptions {
+    font-size: $default-font-size;
+    font-family: Cairo;
+    font-weight: 600;
+    user-select: none;
+
+    &--community {
+        margin: 3.5rem 0;
+    }
+}
+
+.main-title-large {
+    font-size: 9rem;
+    font-family: Mont;
+    user-select: none;
+}
+
+.main-title-medium {
+    font-size: 6rem;
+    font-family: Mont;
+    user-select: none;
+}
+
+.informed-descriptions, .lost__description {
+    font-family: Cairo;
+    font-weight: 600;
+    user-select: none;
+    margin: 1rem 0;
+    font-size: 1vw;
+    color: $dark-gray;
+}
+
+@media (max-width: 1435px){
+    .main-title-large {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 1072px){
+    .main-title-medium {
+        font-size: 3rem;
+    }
+    .descriptions {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 980px){
+    .main-title-large {
+        font-size: 6rem;
+    }
+    .main-title-medium {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px){
+    .main-title-large {
+        font-size: 5rem;
+    }
+    .descriptions {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px){
+    .descriptions {
+        &--community {
+            font-size: 1rem;
+        }
+    }
+}

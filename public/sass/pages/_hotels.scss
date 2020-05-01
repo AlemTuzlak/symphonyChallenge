@@ -1,0 +1,13 @@
+.hotels {
+    width: 80%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+
+    @include media-tablet {
+        width: 100%;
+    }
+    @include media-tablet-portrait {
+        width: 95%;
+    }
+}
